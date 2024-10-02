@@ -27,6 +27,7 @@
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             border-radius: 20px;
             backdrop-filter: blur(15px);
+            overflow: hidden;
         }
 
         h1 {
@@ -57,38 +58,46 @@
             background: rgba(255, 255, 255, 0.15);
             position: relative;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
         .team-member:hover {
-            transform: translateY(-10px);
-            transform:translateX(+10px);
-            box-shadow: 0 20px 50px rgba(0, 25, 25, 22);
+            transform: translateY(-10px) translateX(10px);
+            box-shadow: 0 20px 50px rgba(0, 25, 25, 0.5);
+        }
+
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         .team-member h2 {
             font-family: 'Playfair Display', serif;
             font-size: 2em;
             margin: 0;
-            color:#DDA0DD;
+            color: #DDA0DD;
             text-shadow: 0px 1px 10px rgba(0, 2, 22, 255);
         }
 
         .team-member p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: #e0e0e0;
             margin-top: 10px;
-            line-height: 1.8;
+            line-height: 1.6;
         }
 
-        .team-member:before {
-            content: '';
-            position: absolute;
-            width: 5px;
-            height: 100%;
-            background: linear-gradient(180deg, purple, blue);
-            left: 0;
-            top: 0;
-            border-radius: 15px 0 0 15px;
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: #DDA0DD;
+            margin-right: 10px;
+            text-decoration: none;
         }
 
         footer {
@@ -113,6 +122,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateY(0);
@@ -151,6 +161,30 @@
             animation: fadeIn 1s ease 1.5s forwards;
         }
 
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .team-member {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .team-member img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .team-member h2 {
+                font-size: 1.8em;
+            }
+
+            .team-member p {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 
@@ -159,49 +193,107 @@
         <h1>Meet the Paradox Team</h1>
 
         <div class="team-member">
-            <h2>Vishal Rawad</h2>
-            <p>Team lead specializing in backend development, AI/ML integration, CI/CD pipeline management, and Azure cloud solutions. Ensures our system's scalability and efficiency.</p>
+            <img src="https://via.placeholder.com/80" alt="Vishal Rawad">
+            <div>
+                <h2>Vishal Rawat</h2>
+                <p>Team lead specializing in backend development, AI/ML integration, CI/CD pipeline management, and Azure cloud solutions. Ensures our system's scalability and efficiency.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="team-member">
-            <h2>Danish Khan</h2>
-            <p>Skilled backend developer responsible for Git management, testing, and maintaining code quality. Ensures the stability and smooth operation of backend processes.</p>
+            <img src="images/Danish.jpg" alt="Danish Khan">
+            <div>
+                <h2>Danish Khan</h2>
+                <p>Skilled backend developer responsible for Git management, testing, and maintaining code quality. Ensures the stability and smooth operation of backend processes.</p>
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/danishkhan229" target="_blank">LinkedIn</a>
+                    <a href="www.github.com/Danish451" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="team-member">
-            <h2>Ishika Patni</h2>
-            <p>Creative and detail-oriented frontend developer focused on building intuitive user interfaces and conducting comprehensive testing to ensure an exceptional user experience.</p>
+            <img src="images/ishika.png" alt="Ishika Patni">
+            <div>
+                <h2>Ishika Patni</h2>
+                <p>Creative and detail-oriented frontend developer focused on building intuitive user interfaces and conducting comprehensive testing to ensure an exceptional user experience.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ishika-patni-66227a228" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/ishika3838" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="team-member">
-            <h2>Tushar Kumar Sahu</h2>
-            <p>Frontend developer with strong debugging skills, ensuring our applications run smoothly and deliver a seamless user experience.</p>
+            <img src="images/tushar.jpg" alt="Tushar Kumar Sahu">
+            <div>
+                <h2>Tushar Kumar Sahu</h2>
+                <p>Frontend developer with strong debugging skills, ensuring our applications run smoothly and deliver a seamless user experience.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/tushar-kumar-sahu-8a7245250" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/KumarTusharSahu" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="team-member">
-            <h2>Manav Modi</h2>
-            <p>Frontend developer and admin panel integration specialist, ensuring fluid functionality across all platforms by bridging user interface and backend services.</p>
+            <img src="https://via.placeholder.com/80" alt="Manav Modi">
+            <div>
+                <h2>Manav Modi</h2>
+                <p>Frontend developer and admin panel integration specialist, ensuring fluid functionality across all platforms by bridging user interface and backend services.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="team-member">
-            <h2>Chinkle Rathore</h2>
-            <p>Backend developer with expertise in admin panel integration, playing a crucial role in managing server-side operations, ensuring system security and performance.</p>
+            <img src="https://via.placeholder.com/80" alt="Chinkle Rathore">
+            <div>
+                <h2>Chinkle Rathore</h2>
+                <p>Backend developer with expertise in admin panel integration, playing a crucial role in managing server-side operations, ensuring system security and performance.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="team-member">
-            <h2>Aditya Dadhich</h2>
-            <p>Python developer and AI/ML handler, responsible for creating the Maruti AI model. Managed its scalability, ensured robustness, and integrated it into the website for smooth operations.</p>
+            <img src="images/aditya.jpg" alt="Bhavik Jha">
+            <div>
+                <h2>Aditya Dadhich</h2>
+                <p>Python developer and AI/ML handler, responsible for creating the Maruti AI model. Managed its scalability, ensured robustness, and integrated it into the website for smooth operations.</p>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aditya-dadhich-0b872b264/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/adiibaba239" target="_blank">GitHub</a>
+                </div>
+            </div>
         </div>
 
         <div class="team-member">
-            <h2>Maruti</h2>
+            <img src="https://via.placeholder.com/80" alt="Vansh Kothari">
+            <div>
+                <h2>Maruti</h2>
             <p>I am Maruti, a question-answering system developed by Aditya Dadhich. I can answer queries based on the information provided in documents or books. Still learning, excited to assist you more in the future.</p>
-        </div>
-    </div>
 
-    <footer>
-        &copy; 2024 Paradox Team. All Rights Reserved.
-    </footer>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Paradox Team. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 
 </html>

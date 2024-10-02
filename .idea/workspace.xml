@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="619bbc6c-43da-4011-a687-16afef34e7a3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/vicky.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +49,16 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "v1"
+    "git-widget-placeholder": "v1",
+    "last_opened_file_path": "C:/Users/adity/OneDrive/Desktop/autocomplete/paradox_introduction/images"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adity\OneDrive\Desktop\autocomplete\paradox_introduction\images" />
+      <recent name="C:\Users\adity\OneDrive\Desktop\autocomplete\paradox_introduction" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
